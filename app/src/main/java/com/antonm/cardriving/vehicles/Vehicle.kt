@@ -1,4 +1,6 @@
-package com.antonm.cardriving
+package com.antonm.cardriving.vehicles
+
+import com.antonm.cardriving.computers.OnBoardComputer
 
 interface Vehicle {
     fun isMoving(): Boolean

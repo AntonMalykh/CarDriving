@@ -1,11 +1,9 @@
-package com.antonm.cardriving
+package com.antonm.cardriving.vehicles
 
 import android.content.Context
-import android.graphics.Matrix
 import android.util.AttributeSet
-import android.view.animation.Animation
-import android.view.animation.Transformation
 import android.widget.FrameLayout
+import com.antonm.cardriving.computers.OnBoardComputer
 
 abstract class VehicleView<T: OnBoardComputer> @JvmOverloads constructor(
     context: Context,

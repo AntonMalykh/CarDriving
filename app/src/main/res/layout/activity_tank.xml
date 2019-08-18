@@ -16,7 +16,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.antonm.cardriving.TankView
+        <com.antonm.cardriving.vehicles.TankView
             android:id="@+id/vehicle"
             android:layout_width="60dp"
             android:layout_height="120dp"

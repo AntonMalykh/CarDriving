@@ -1,4 +1,4 @@
-package com.antonm.cardriving
+package com.antonm.cardriving.computers
 
 import android.graphics.Matrix
 import java.lang.Math.toRadians
@@ -18,7 +18,11 @@ class AutomobileOnBoardComputer(initialDirection: FloatArray,
         acceleration += request.acceleration * Math.cos(toRadians(ang.toDouble())).toFloat()
         val angle = processRotation(ang)
         val translations = processTranslation(acceleration)
-        return AppliedDirectionChange(angle, translations[0], translations[1])
+        return AppliedDirectionChange(
+            angle,
+            translations[0],
+            translations[1]
+        )
     }
 
 

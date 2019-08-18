@@ -1,7 +1,9 @@
-package com.antonm.cardriving
+package com.antonm.cardriving.vehicles
 
 import android.content.Context
 import android.util.AttributeSet
+import com.antonm.cardriving.computers.OnBoardComputer
+import com.antonm.cardriving.computers.TankOnBoardComputer
 
 class TankView @JvmOverloads constructor(
     context: Context,

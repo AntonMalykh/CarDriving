@@ -1,4 +1,4 @@
-package com.antonm.cardriving
+package com.antonm.cardriving.computers
 
 import android.graphics.Matrix
 import kotlin.math.abs
@@ -17,7 +17,11 @@ class TankOnBoardComputer(initialDirection: FloatArray,
             )
 
         val translation = processTranslation()
-        return AppliedDirectionChange(0f, translation[0], translation[1])
+        return AppliedDirectionChange(
+            0f,
+            translation[0],
+            translation[1]
+        )
     }
 
     private fun processRotation(angle: Float): Float {

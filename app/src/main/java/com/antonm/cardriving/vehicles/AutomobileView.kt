@@ -1,7 +1,9 @@
-package com.antonm.cardriving
+package com.antonm.cardriving.vehicles
 
 import android.content.Context
 import android.util.AttributeSet
+import com.antonm.cardriving.computers.AutomobileOnBoardComputer
+import com.antonm.cardriving.computers.OnBoardComputer
 
 
 class AutomobileView @JvmOverloads constructor(

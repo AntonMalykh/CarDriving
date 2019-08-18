@@ -1,5 +1,6 @@
 package com.antonm.cardriving
 
+import com.antonm.cardriving.vehicles.Vehicle
 import kotlin.math.abs
 
 
