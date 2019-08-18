@@ -39,12 +39,12 @@ class AutomobileOnBoardComputer(initialDirection: FloatArray,
     }
 
     private fun processTranslation(acceleration: Float): FloatArray{
-        val ddx = (directionVect[2] - directionVect[0]) / 50f * acceleration
-        val ddy = (directionVect[3] - directionVect[1]) / 50f * acceleration
+        val dx = (directionVect[2] - directionVect[0]) / 50f * acceleration
+        val dy = (directionVect[3] - directionVect[1]) / 50f * acceleration
         val m = Matrix()
-        m.setTranslate(ddx, ddy)
+        m.setTranslate(dx, dy)
         m.mapPoints(directionVect)
-        return floatArrayOf(ddx, ddy)
+        return floatArrayOf(dx, dy)
     }
 
 
